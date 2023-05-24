@@ -1,6 +1,6 @@
 {
-  "name": "SVGcode",
-  "version": "0.0.1",
+  "name": "svgcode",
+  "version": "0.1.0",
   "scripts": {
     "start": "npm run dev",
     "start-with-sw": "npm run build && npm run serve",

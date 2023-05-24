@@ -18,7 +18,6 @@
  */
 
 import { initUI, showToast } from './ui.js';
-import { registerSW } from 'virtual:pwa-register';
 import { i18n } from './i18n.js';
 import {
   installButton,
@@ -113,17 +112,4 @@ onColorSchemeChange();
     );
   }
 
-  const updateSW = registerSW({
-    onOfflineReady() {
-      showToast(i18n.t('readyToWorkOffline'));
-    },
-    onNeedRefresh() {
-      location.reload();
-    },
-  });
-  updateSW();
 })();
-
-if (location.href === 'https://svgco.de/') {
-  import('./collect.js');
-}

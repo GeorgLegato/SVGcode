@@ -28,7 +28,7 @@ import { convertToColorSVG, intervalID } from './color.js';
 import { showToast, MONOCHROME, COLOR } from './ui.js';
 import { i18n } from './i18n.js';
 
-import spinnerSVG from '/spinner.svg?raw';
+import spinnerSVG from '../../public/spinner.svg';
 
 const readableSize = (size) => {
   if (size === 0) return '0B';
